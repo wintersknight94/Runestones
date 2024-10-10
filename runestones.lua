@@ -18,6 +18,7 @@ local function runestone(name, desc, glyph)
 			rock = 1,
 			snappy = 1,
 			runestone = 1,
+			falling_node = 1,
 		},
 		stack_family = modname .. ":hedron",
 		crush_damage = 2,
@@ -50,13 +51,11 @@ minetest.register_node(modname .. ":hedron", {
 		stone.. "^((nc_fire_coal_4.png^[mask:nc_writing_glyph_geq.png)^[opacity:75)"
 	},
 	paramtype2 = "facedir",
---	placeparam = "facedir",
 	groups = {
 		stone = 1,
 		rock = 1,
 		snappy = 1,
 		runestone = 1,
---		stack_as_node = 1
 	},
 	stack_max = 1,
 	crush_damage = 2,
